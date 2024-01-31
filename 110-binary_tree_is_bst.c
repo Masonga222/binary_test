@@ -16,7 +16,7 @@ int is_bst_helper(const binary_tree_t *tree, int lo, int hi)
 		if (tree->n < lo || tree->n > hi)
 			return (0);
 		return (is_bst_helper(tree->left, lo, tree->n - 1) &&
-			is_bst_helper(tree->right, tree->n + 1, hi));
+				is_bst_helper(tree->right, tree->n + 1, hi));
 	}
 	return (1);
 }
